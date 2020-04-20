@@ -1,11 +1,21 @@
 main(){
-  test((num1,num2){
-    return num1 + num2;
-  });
 
-  var demo1 = demo();
- print(demo1(20,30));
 }
+
+
+
+
+void test1(){
+test((num1,num2){
+return num1 + num2;
+});
+
+var demo1 = demo();
+print(demo1(20,30));
+}
+
+
+
 typedef Calculate = int Function (int num1,int num2);
 
 void test(Calculate culate){

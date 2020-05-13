@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'initialize_items.dart';
 
 class LFMainPage extends StatefulWidget {
   @override
@@ -13,23 +14,22 @@ class _LFMainPageState extends State<LFMainPage> {
     return Scaffold(
       body: IndexedStack(
         index:_currentIndex,
-        children: <Widget>[],
+        children: pages,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
-          LFBottomBarItem("home","首页"),
-          LFBottomBarItem("subject","书影音"),
-        ],
+        selectedFontSize: 14,
+        unselectedFontSize: 14,
+       currentIndex: _currentIndex,
+        type: BottomNavigationBarType.fixed,//4个以上开启才有文字
+        items: items,
+        onTap:((index){
+          setState(() {
+            _currentIndex = index;
+          });
+        }),
       ),
       
     );
   }
 }
 
-class LFBottomBarItem extends BottomNavigationBarItem{
-  LFBottomBarItem(String iconName,String title):super(
-    title:Text(title),
-  icon:Image.asset("assets/images/tabbar/$iconName.png", width: 32,),
-  activeIcon:Image.asset("assets/images/tabbar/${iconName}_active.png", width: 32,),
-  );
-}

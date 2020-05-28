@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         highlightColor: Colors.transparent
       ),
 //      home: LFMainPage(),
-      home: LFHomePage(),
+      home: LFMainPage(),
     );
   }
 }

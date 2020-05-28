@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-import 'package:flutter/material.dart';void main() => runApp(MyApp());class MyApp extends StatelessWidget {  @override  Widget build(BuildContext context) {    return MaterialApp(      debugShowCheckedModeBanner: false,      home: LFHomePage(),    );  }}class LFHomePage extends StatelessWidget {  @override  Widget build(BuildContext context) {    return Scaffold(      appBar: AppBar(        title: Text(          "列表",          style: TextStyle(fontSize: 20, color: Colors.red),        ),      ),      body: LFHomeContent(),    );  }}class LFHomeContent extends StatefulWidget {  LFHomeContent();  @override  _LFHomeContentState createState() => _LFHomeContentState();}class _LFHomeContentState extends State<LFHomeContent> {  @override  Widget build(BuildContext context) {    return ListView.builder(        itemBuilder:        );  }  ListView ListView02() => ListView(      scrollDirection: Axis.horizontal ,      padding: const EdgeInsets.all(8),      children: <Widget>[        Container(          height: 50,          color: Colors.amber[600],          child: const Center(child: Text('Entry A')),        ),        Container(          height: 50,          width: 350,          color: Colors.amber[500],          child: const Center(child: Text('Entry B')),        ),        Container(          height: 50,          color: Colors.amber[100],          child: const Center(child: Text('Entry C')),        ),      ],    );//children比较少的时候用默认初始换ListView() 一次性生成完  //ListView().build 滚动创建  ListView ListView01() {    return ListView(      scrollDirection: Axis.vertical,//滚动方向      reverse: true,    primary: true,    itemExtent: 100,//有高度才可以水平滚动    children: List.generate(200, (index){//        Text("Hello world $index",style: TextStyle(fontSize: 20,color:  Colors.red),)      return ListTile(        leading: Icon(Icons.people),//头部        trailing: Icon(Icons.delete) ,//尾部        title: Text("电话"),        subtitle: Text("电话12343453464356"),      );    }),  );  }}
-=======
+
 
 import 'package:flutter/material.dart';
 
@@ -88,9 +86,7 @@ class _LFHomeContentState extends State<LFHomeContent> {
 
 
 
-  }
-
-
+   }
 
 }
->>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
+

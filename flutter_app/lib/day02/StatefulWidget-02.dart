@@ -1,8 +1,18 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+<<<<<<< HEAD
 class MyApp extends StatelessWidget {
+=======
+
+class MyApp extends StatelessWidget {
+
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,15 +22,23 @@ class MyApp extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
 class LFHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
         title: Text(
           "商品列表",
           style: TextStyle(fontSize: 20, color: Colors.red),
         ),
+=======
+        title: Text("商品列表",style: TextStyle(fontSize: 20,color: Colors.red),),
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
       ),
       body: LFHomeContent("你好，李银河"),
     );
@@ -28,8 +46,13 @@ class LFHomePage extends StatelessWidget {
 }
 
 class LFHomeContent extends StatefulWidget {
+<<<<<<< HEAD
   final String message;
 
+=======
+
+  final String message;
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51
   LFHomeContent(this.message);
 
   @override
@@ -38,6 +61,7 @@ class LFHomeContent extends StatefulWidget {
 
 class _LFHomeContentState extends State<LFHomeContent> {
   int _counter = 0;
+<<<<<<< HEAD
 
   @override
   Widget build(BuildContext context) {
@@ -84,3 +108,28 @@ class _LFHomeContentState extends State<LFHomeContent> {
     );
   }
 }
+=======
+  @override
+  Widget build(BuildContext context) {
+    return centerDemo();
+  }
+
+  Center centerDemo() {
+    return Center(
+    child: Column(
+      children: <Widget>[
+        RaisedButton(
+          child: Text("+",style: TextStyle(fontSize: 20),),
+          onPressed: (){
+            setState(() {
+
+            });
+          },
+        )
+      ],
+    ),
+  );
+  }
+}
+
+>>>>>>> a0c8a47775814c4ae29746e8d3fb840e21907d51

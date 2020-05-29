@@ -1,9 +1,8 @@
-class  HttpConfig {
+class HttpConfig {
   static const String baseURL = "https://douban.uieee.com/v2";
-  static const int timeout = 5000;
-
+  static const int timeout = 50000;
 }
 
-class HomConfig {
+class HomeConfig {
   static const int movieCount = 20;
 }

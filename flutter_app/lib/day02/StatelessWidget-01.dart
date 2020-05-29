@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+//option command + b 查看子类
 class LFHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -88,3 +88,59 @@ class LFHomeProductItem extends StatelessWidget {
     );
   }
 }
+
+
+
+//
+//class _LFHomeContentState extends State<LFHomeContent> {
+//  int _counter = 0;
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return CenterDemo();
+//  }
+//
+//  Center CenterDemo() => Center(
+//
+//    child: Column(
+//      mainAxisAlignment: MainAxisAlignment.center ,
+//      children: <Widget>[
+//        _getButtons(),
+//        Text("当前计数:$_counter"),
+//        Text(widget.message),
+//      ],
+//    ),
+//  );
+////opt + cmd + L 格式化代码
+//  Widget _getButtons() {
+//    return Row(
+//      mainAxisAlignment: MainAxisAlignment.center,
+//      children: <Widget>[
+//        RaisedButton(
+//          child: Text(
+//            "+",
+//            style: TextStyle(fontSize: 20, color: Colors.white),
+//          ),
+//          color: Colors.red,
+//          onPressed: () {
+//            setState(() {
+//              _counter++;
+//            });
+//          },
+//        ),
+//        RaisedButton(
+//            child: Text(
+//              "-",
+//              style: TextStyle(fontSize: 20, color: Colors.white),
+//            ),
+//            color: Colors.green,
+//            onPressed: () {
+//              setState(() {
+//                _counter--;
+//              });
+//            }),
+//      ],
+//    );
+//  }
+//}
+//template

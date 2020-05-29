@@ -53,7 +53,7 @@ class _LFStarRatingState extends State<LFStarRating> {
     List<Widget> stars = [];
     final star = widget.selectedImage;
     //2.创建满填充的star
-    double oneValue = widget.maxRating /widget.count;
+    double oneValue = widget.maxRating / widget.count;
     int entireCount = (widget.rating / oneValue).floor();
     for(var i = 0;i < entireCount;i++){
       stars.add(star);

@@ -124,6 +124,9 @@ Widget buildContent(){
               alignment: PlaceholderAlignment.middle
           ),
           WidgetSpan(child: Text(widget.movie.title, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),), alignment: PlaceholderAlignment.middle),
+//          ...movie.title.runes.map((rune) {
+//            return WidgetSpan(child: Text(new String.fromCharCode(rune), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),), alignment: PlaceholderAlignment.middle);
+//          }).toList(),
           WidgetSpan(child: Text("(${widget.movie.playDate})"), style: TextStyle(fontSize: 18, color: Colors.grey))
         ])
     );
@@ -158,8 +161,9 @@ Widget buildContent(){
         dashedWidth: .4,
         dashedHeight: 6,
         count: 10,
-        color: Colors.pink,
+        color: Colors.red,
       ),
+
 
     );
   }
